@@ -84,11 +84,13 @@ img, svg { max-width: 100%; display: block; }
     radial-gradient(50% 50% at 0% 100%, rgba(193,41,46,.10), transparent 70%);
   pointer-events: none;
 }
-.hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(28px, 5vw, 60px); align-items: center; }
-.hero h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); letter-spacing: -.01em; }
+.hero .wrap { position: relative; z-index: 1; }
+.hero-copy { text-align: center; max-width: 620px; margin-inline: auto; }
+.hero-art { margin: 26px auto; max-width: 440px; }
+.hero h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); letter-spacing: -.01em; text-align: center; }
 .hero h1 .hl { color: var(--red); font-style: italic; }
-.hero .sub { margin-top: 20px; font-size: clamp(1.02rem, 2.4vw, 1.22rem); color: var(--muted); max-width: 32ch; }
-.hero .tags { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; }
+.hero .sub { margin-top: 20px; font-size: clamp(1.02rem, 2.4vw, 1.22rem); color: var(--muted); max-width: 40ch; margin-inline: auto; }
+.hero .tags { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
 .tag {
   font-size: .82rem; font-weight: 600; padding: 7px 13px; border-radius: 999px;
   background: var(--surface); border: 1px solid var(--line); color: var(--fg);
@@ -156,8 +158,8 @@ img, svg { max-width: 100%; display: block; }
 .car-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 
 /* ---------- OFERTA ---------- */
-.offer-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(26px, 4vw, 48px); align-items: center; }
-.offer-art { border-radius: 22px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line); background: var(--surface); }
+.offer-grid { max-width: 620px; margin-inline: auto; }
+.offer-art { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); max-width: 320px; margin: 0 auto 24px; }
 
 .offer-card {
   background: var(--surface); border: 1px solid var(--line); border-radius: 22px;
@@ -222,6 +224,5 @@ footer .legal { max-width: 60ch; line-height: 1.5; }
   .hero .wrap { grid-template-columns: 1fr; }
   .hero-art { rotate: 0deg; order: -1; }
   .hero .sub { max-width: none; }
-  .offer-grid { grid-template-columns: 1fr; }
-  .offer-art { max-width: 380px; margin-inline: auto; }
+  .offer-art { max-width: 260px; }
 }
