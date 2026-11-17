@@ -125,13 +125,13 @@ img, svg { max-width: 100%; display: block; }
 @media (prefers-reduced-motion: reduce) { .btn-pulse { animation: none; } .hero-art { rotate: 0deg; } }
 
 /* ---------- SEÇÃO "O QUE VAI RECEBER" (carrossel) ---------- */
-.band-pine { background: var(--pine); color: #fff4e6; }
+.band-pine { background: var(--pine); color: #ffffff; }
 .band-pine .eyebrow { color: var(--gold); }
 .band-pine h2 { color: #fff; }
 .section-head { text-align: center; max-width: 42ch; margin-inline: auto; margin-bottom: 36px; }
 .section-head h2 { font-size: clamp(1.7rem, 4.4vw, 2.6rem); }
 .section-head p { margin-top: 14px; color: var(--muted); }
-.band-pine .section-head p { color: #e6d2b4; }
+.band-pine .section-head p { color: #ffffff; }
 
 .carousel { position: relative; }
 .track {
@@ -145,6 +145,7 @@ img, svg { max-width: 100%; display: block; }
   scroll-snap-align: center; background: var(--surface); border-radius: var(--radius);
   overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); color: var(--fg);
 }
+.slide img { width: 100%; display: block; background: #fff; }
 .slide .cap { padding: 14px 16px 18px; }
 .slide .cap h3 { font-size: 1.12rem; }
 .slide .cap p { font-size: .9rem; color: var(--muted); margin-top: 5px; }
@@ -157,6 +158,24 @@ img, svg { max-width: 100%; display: block; }
 }
 .car-btn:hover { background: rgba(255,255,255,.2); }
 .car-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+/* ---------- 6 CATEGORIAS ---------- */
+.cat-title { text-align: center; color: #fff; font-size: clamp(1.4rem, 3.6vw, 1.9rem); margin-top: 44px; }
+.cat-grid {
+  margin-top: 26px; display: grid; gap: 14px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cat-card {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+  text-align: center; padding: 22px 14px; border-radius: 16px;
+  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.16);
+  color: #fff; font-weight: 600; font-size: .95rem; line-height: 1.3; min-height: 112px;
+}
+.cat-ic {
+  width: 30px; height: 30px; fill: none; stroke: var(--gold);
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+@media (max-width: 560px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } }
 
 /* ---------- OFERTA ---------- */
 .offer-grid { max-width: 620px; margin-inline: auto; }
@@ -200,12 +219,12 @@ img, svg { max-width: 100%; display: block; }
 .guarantee { text-align: center; }
 .guarantee .seal-big { margin: 0 auto 20px; }
 .guarantee h2 { font-size: clamp(1.7rem, 4.4vw, 2.5rem); }
-.guarantee p { margin: 16px auto 0; max-width: 52ch; color: var(--muted); font-size: 1.05rem; }
+.guarantee p { margin: 16px auto 0; max-width: 52ch; color: #ffffff; font-size: 1.05rem; }
 
 /* ---------- CTA FINAL ---------- */
-.cta-final { background: var(--pine); color: #fff4e6; text-align: center; }
+.cta-final { background: #832e3d; color: #ffffff; text-align: center; }
 .cta-final h2 { color: #fff; font-size: clamp(1.8rem, 5vw, 3rem); }
-.cta-final p { margin: 16px auto 28px; max-width: 46ch; color: #e6d2b4; font-size: 1.08rem; }
+.cta-final p { margin: 16px auto 28px; max-width: 46ch; color: #ffffff; font-size: 1.08rem; }
 .cta-final .price-pill {
   display: inline-flex; align-items: baseline; gap: 6px; margin-bottom: 26px;
   background: rgba(255,255,255,.1); padding: 10px 20px; border-radius: 999px;
